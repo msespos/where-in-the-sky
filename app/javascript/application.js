@@ -5,13 +5,11 @@ import "./controllers"
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Clouds1 from "assets/clouds1.jpg";
-
 const App = () => {
   return (
     <div>
       <h1>Where In The Sky?</h1>
-      <img src={Clouds1} alt="Clouds Image 1" height={1000} />
+      <img src="assets/clouds1.jpg" alt="Clouds Image 1" width={1200} />
     </div>
   );
 }
