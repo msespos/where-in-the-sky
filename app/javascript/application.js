@@ -8,10 +8,26 @@ import ReactDOM from 'react-dom';
 const App = () => {
   return (
     <div>
-      <h1>Where In The Sky?</h1>
-      <img src="assets/clouds1.jpg" alt="Clouds Image 1" width={1200} />
+      <Header />
+      <MainImage />
     </div>
   );
+}
+
+const Header = () => {
+  return (
+    <div>
+      <h1>Where In The Sky?</h1>
+    </div>
+  )
+}
+
+const MainImage = () => {
+  return (
+    <div>
+      <img src="assets/clouds1.jpg" alt="Clouds Image 1" width={1200} />
+    </div>
+  )
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
