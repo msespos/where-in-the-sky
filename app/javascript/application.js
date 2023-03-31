@@ -32,11 +32,10 @@ const toggleTargetBoxView = () => {
 }
 
 const placeTargetBox = (e) => {
-  const rect = e.target.getBoundingClientRect();
   const div = document.getElementById("target-box");
   div.style.position = "absolute";
-  div.style.left = (e.screenX - rect.left - 18).toString() + "px";
-  div.style.top = (e.screenY - rect.top - 82).toString() + "px";
+  div.style.left = (e.pageX - 25).toString() + "px";
+  div.style.top = (e.pageY - 25).toString() + "px";
   toggleTargetBoxView();
 }
 
