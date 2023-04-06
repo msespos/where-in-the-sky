@@ -39,7 +39,7 @@ const Header = () => {
            width={100}
         />
       <h2>
-        Find these four places in the sky. You may have to scroll to see the whole sky. The images are enlarged.
+        Find these four places in the sky. You may have to scroll to see the whole sky. The images above are enlarged.
       </h2>
     </div>
   )
