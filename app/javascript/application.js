@@ -20,22 +20,22 @@ const Header = () => {
       <h1>Where In The Sky?</h1>
       <img src="assets/clouds1a.jpg"
            className="crop-display"
-           alt="Clouds Image 1 Crop 1"
+           alt="Clouds Image 1 Crop a"
            width={100}
         />
       <img src="assets/clouds1b.jpg"
            className="crop-display"
-           alt="Clouds Image 1 Crop 2"
+           alt="Clouds Image 1 Crop b"
            width={100}
         />
       <img src="assets/clouds1c.jpg"
            className="crop-display"
-           alt="Clouds Image 1 Crop 3"
+           alt="Clouds Image 1 Crop c"
            width={100}
         />
       <img src="assets/clouds1d.jpg"
            className="crop-display"
-           alt="Clouds Image 1 Crop 4"
+           alt="Clouds Image 1 Crop d"
            width={100}
         />
       <h2>
