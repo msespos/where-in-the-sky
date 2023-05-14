@@ -10,5 +10,8 @@
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds --loader:.js=jsx --public-path=assets --loader:.jpg=file"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^8.10.2"
   }
 }
