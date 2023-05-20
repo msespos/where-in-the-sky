@@ -69,10 +69,9 @@ const placeTargetBox = (e) => {
   div.style.left = (e.pageX - 25).toString() + "px";
   div.style.top = (e.pageY - 25).toString() + "px";
   toggleTargetBoxView();
-  placeCrop(e, 1, 33);
-  placeCrop(e, 2, 83);
-  placeCrop(e, 3, 133);
-  placeCrop(e, 4, 183);
+  for (let i = 0; i < 4; i++) {
+    placeCrop(e, i + 1, i * 50 + 33);
+  };
 }
 
 const placeCrop = (e, cropNumber, shiftValue) => {
