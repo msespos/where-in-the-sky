@@ -80,6 +80,23 @@ const placeCrop = (e, cropNumber, shiftValue) => {
   div.style.left = (e.pageX - 23).toString() + "px";
   div.style.top = (e.pageY + shiftValue).toString() + "px";
   toggleCropView(cropNumber);
+  const translator = ["a", "b", "c", "d"]
+  div.onclick = () => {
+    guess(e, "clouds1" + translator[cropNumber - 1]);
+  }
+}
+
+const guess = async (e, name) => {
+  verify(e, name).then(result => {
+    console.log(result);
+  });
+}
+
+const verify = async (e, name) => {
+  const params = "name=" + name + "&xcoord=" + e.pageX + "&ycoord=" + e.pageY;
+  const response = await fetch("/root/verify?" + params);
+  const result = await response.json();
+  return result;
 }
 
 const MainImage = () => {
